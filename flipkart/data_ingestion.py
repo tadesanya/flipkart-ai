@@ -3,6 +3,7 @@ from langchain_huggingface import HuggingFaceEndpointEmbeddings
 from flipkart.data_converter import DataConverter
 from flipkart.config import Config
 
+
 class DataIngestor:
     def __init__(self):
         self.embedding = HuggingFaceEndpointEmbeddings(model=Config.EMBEDDING_MODEL)
